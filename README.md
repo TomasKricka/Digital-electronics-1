@@ -31,7 +31,7 @@ cell 1 | cell 2
 DoG | CaT
 
 
-```
+```vhdl
 -- definice entity...
 entity my_and is
   port (IN1, IN2 : in std_logic; OUT1: out std_logic);
