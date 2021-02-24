@@ -123,7 +123,7 @@ end architecture Behavioral;
 ```
 
 ### Waveforms
-![Simulation](images/waves.png)
+![Simulation](images/waves.PNG)
 
 <br>
 <br>
@@ -134,27 +134,27 @@ end architecture Behavioral;
 
 1. Create project and design
 
-![Tut1](images/1.png)
-![Tut2](images/2.png)
-![Tut3](images/3.png)
-![Tut4](images/4.png)
-![Tut5](images/5.png)
-![Tut6](images/6.png)
-![Tut7](images/7.png)
-![Tut8](images/8.png)
+![Tut1](images/1.PNG)
+![Tut2](images/2.PNG)
+![Tut3](images/3.PNG)
+![Tut4](images/4.PNG)
+![Tut5](images/5.PNG)
+![Tut6](images/6.PNG)
+![Tut7](images/7.PNG)
+![Tut8](images/8.PNG)
 
 2. Create testbench
 
-![Tut9](images/9.png)
-![Tut10](images/10.png)
-![Tut11](images/11.png)
-![Tut12](images/12.png)
+![Tut9](images/9.PNG)
+![Tut10](images/10.PNG)
+![Tut11](images/11.PNG)
+![Tut12](images/12.PNG)
 
 3. Create Constants
 
-![Tut13](images/13.png)
-![Tut14](images/14.png)
+![Tut13](images/13.PNG)
+![Tut14](images/14.PNG)
 
 4. Run simulation
 
-![Tut15](images/15.png)
+![Tut15](images/15.PNG)
