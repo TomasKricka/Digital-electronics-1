@@ -1,4 +1,4 @@
-# Lab 02 - Vivado
+# Lab 03 - Vivado
 
 ## My repository
 [My git - Tomáš Kříčka, 223283](https://github.com/TomasKricka/Digital-electronics-1)
