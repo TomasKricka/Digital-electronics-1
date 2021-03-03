@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar  3 15:22:31 2021
+# Process ID: 9504
+# Current directory: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/VUT -notrace

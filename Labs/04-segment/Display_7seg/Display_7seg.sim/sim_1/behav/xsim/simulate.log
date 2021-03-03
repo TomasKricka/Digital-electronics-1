@@ -1,0 +1,6 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: simulation start
+Time: 0 ps  Iteration: 0  Process: /tb_top/p_stimulus  File: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.srcs/sim_1/new/tb_top.vhd
+Note: simulation end
+Time: 1600 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.srcs/sim_1/new/tb_top.vhd

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.srcs/sources_1/new/hex_7seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hex_7seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/04-segment/Display_7seg/Display_7seg.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_top'
