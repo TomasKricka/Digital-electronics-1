@@ -1,4 +1,4 @@
-# 04-adder
+# 04-segment
 
 ## My repository
 [My git - Tomáš Kříčka, 223283](https://github.com/TomasKricka/Digital-electronics-1)
