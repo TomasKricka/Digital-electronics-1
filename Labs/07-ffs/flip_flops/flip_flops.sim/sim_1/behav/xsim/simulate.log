@@ -1,0 +1,8 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Asserts started
+Time: 0 ps  Iteration: 0  Process: /tb_t_ff_rst/p_asserts  File: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd
+Note: Stimulus started
+Time: 0 ps  Iteration: 0  Process: /tb_t_ff_rst/p_stimulus  File: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd
+Note: Asserts ended
+Time: 147 ns  Iteration: 0  Process: /tb_t_ff_rst/p_asserts  File: D:/VUT Fekt/4. semestr/Diditalni elektrotechnika 1/git/Digital-electronics-1/Labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd
