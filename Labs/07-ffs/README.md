@@ -16,8 +16,8 @@
    | :-: | :-: | :-: | :-: | :-: |
    | ↑ | 0 | 0 | 0 | No change |
    | ↑ | 0 | 1 | 0 | No change |
-   | ↑ | 1 | 0 | 1 | q(n+1)-d  |
-   | ↑ | 1 | 1 | 1 |  |
+   | ↑ | 1 | 0 | 1 | q(n+1) |
+   | ↑ | 1 | 1 | 1 | q(n+1) |
 
 <br>
 
@@ -25,14 +25,14 @@
 
    | **clk** | **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
    | :-:| :-: | :-: | :-: | :-: | :-- |
-   | ↑ | 0 | 0 | 0 | 0 | No change1 |
-   | ↑ | 0 | 0 | 1 | 1 | No change1 |
-   | ↑ | 0 | 1 | 0 | 0 | Reset1 |
-   | ↑ | 0 | 1 | 1 | 0 | Reset1 |
-   | ↑ | 1 | 0 | 0 | 1 | Set1 |
-   | ↑ | 1 | 0 | 1 | 1 | Set1 |
-   | ↑ | 1 | 1 | 0 | 1 | Toggle1 |
-   | ↑ | 1 | 1 | 1 | 0 | Toggle1 |
+   | ↑ | 0 | 0 | 0 | 0 | No change |
+   | ↑ | 0 | 0 | 1 | 1 | No change |
+   | ↑ | 0 | 1 | 0 | 0 | Reset |
+   | ↑ | 0 | 1 | 1 | 0 | Reset |
+   | ↑ | 1 | 0 | 0 | 1 | Set |
+   | ↑ | 1 | 0 | 1 | 1 | Set |
+   | ↑ | 1 | 1 | 0 | 1 | Toggle |
+   | ↑ | 1 | 1 | 1 | 0 | Toggle |
 
 <br>
 
@@ -222,10 +222,10 @@ end Behavioral;
 <br>
 
 ### Waverorms
-![waves](images\1.PNG)  
+![waves](images/1.PNG)  
 
 ### Console
-![console](images\2.PNG)
+![console](images/2.PNG)
 
 <br>
 <br>
@@ -353,10 +353,10 @@ end Behavioral;
 ```
 
 ### Waverorms
-![waves](images\3.PNG)  
+![waves](images/3.PNG)  
 
 ### Console
-![console](images\4.PNG)
+![console](images/4.PNG)
 
 <br>
 <br>
@@ -484,10 +484,10 @@ end Behavioral;
 ```
 
 ### Waverorms
-![waves](images\5.PNG)  
+![waves](images/5.PNG)  
 
 ### Console
-![console](images\6.PNG)
+![console](images/6.PNG)
 
 <br>
 <br>
@@ -645,10 +645,10 @@ end Behavioral;
 ```
 
 ### Waverorms
-![waves](images\7.PNG)  
+![waves](images/7.PNG)  
 
 ### Console
-![console](images\8.PNG)
+![console](images/8.PNG)
 
 <br>
 <br>
@@ -799,15 +799,15 @@ end Behavioral;
 ```
 
 ### Waverorms
-![waves](images\9.PNG)  
+![waves](images/9.PNG)  
 
 ### Console
-![console](images\10.PNG)
+![console](images/10.PNG)
 
 
 
 <br>
 <br>
 
-## 4. Shift register
-![schema](images\schema.png)
+## 4. Shift registers
+![schema](images/schema_shifted.png)
