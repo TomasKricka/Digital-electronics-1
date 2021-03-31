@@ -134,69 +134,6 @@ begin
                             s_cnt <= c_ZERO; 
                         end if; 
                     
-
-                        
-                            
-                    
-                    
-                    -----------------------
---                    when STOP1 =>
---                        -- Count up to c_DELAY_1SEC
---                        if (s_cnt < c_DELAY_1SEC) then
---                            s_cnt <= s_cnt + 1;
---                        else
---                            -- Move to the next state
---                            s_state <= WEST_GO;
---                            -- Reset local counter value
---                            s_cnt   <= c_ZERO;
---                        end if;
-
---                    when WEST_GO =>
---                        if (s_cnt < c_DELAY_4SEC) then
---                            s_cnt <= s_cnt + 1;
---                        else
---                            s_state <= WEST_WAIT;
---                            s_cnt <= c_ZERO;
---                        end if;
-                            
---                    when WEST_WAIT =>
---                        if (s_cnt < c_DELAY_2SEC) then
---                            s_cnt <= s_cnt + 1;
---                        else
---                            s_state <= STOP2;
---                            s_cnt <= c_ZERO;
---                        end if;    
-                            
---                     when STOP2 =>
---                        if (s_cnt < c_DELAY_1SEC) then
---                            s_cnt <= s_cnt + 1;
---                        else
---                            s_state <= SOUTH_GO;
---                            s_cnt <= c_ZERO;
---                        end if;    
-                            
---                     when SOUTH_GO =>
---                        if (s_cnt < c_DELAY_1SEC) then
---                            s_cnt <= s_cnt + 1;
---                        else
---                            s_state <= SOUTH_WAIT;
---                            s_cnt <= c_ZERO; 
---                        end if;    
-
---                     when SOUTH_WAIT =>
---                        if (s_cnt < c_DELAY_1SEC) then
---                            s_cnt <= s_cnt + 1;
---                        else
---                            s_state <= STOP1;
---                            s_cnt <= c_ZERO; 
---                        end if;    
-
-                        -- WRITE YOUR CODE HERE
-
-
-                    -- It is a good programming practice to use the 
-                    -- OTHERS clause, even if all CASE choices have 
-                    -- been made. 
                     when others =>
                         s_state <= WEST_GO;
 

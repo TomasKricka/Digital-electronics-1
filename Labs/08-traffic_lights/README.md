@@ -156,7 +156,12 @@ responds on rising edge
 
 ## 3.Smart controller
 ### State table
-
+| **Current state** | **Direction south** | **Direction west** | **No cars (00)** | **Cars to west (01)** | **Cars to south (10)** | **Cars both direction (11)** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| `GO_SOUTH` | `green` | `red` | `GO_SOUTH` | `WAIT_SOUTH` | `GO_SOUTH` | `WAIT_SOUTH` |
+| `WAIT_SOUTH`| `yellow` | `red` | `GO_WEST` | `GO_WEST` | `GO_WEST` | `GO_WEST` |
+| `GO_WEST` | `red` | `green` | `GO_WEST` | `GO_WEST` | `WAIT_WEST` | `WAIT_WEST` |
+| `WAIT_WEST` | `red` | `yellow` | `GO_SOUTH` | `GO_SOUTH` | `GO_SOUTH` | `GO_SOUTH` |
 
 <br>
 
@@ -166,5 +171,67 @@ responds on rising edge
 
 ### VHDL code `p_smart_traffic_fsm`
 ```vhdl
+    p_smart_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then       -- Synchronous reset
+                s_state <= WEST_GO ;      -- Set initial state
+                s_cnt   <= c_ZERO;      -- Clear all bits
 
+            elsif (s_en = '1') then
+                -- Every 250 ms, CASE checks the value of the s_state 
+                -- variable and changes to the next state according 
+                -- to the delay value.
+                case s_state is
+
+                    -- If the current state is STOP1, then wait 1 sec
+                    -- and move to the next GO_WAIT state.
+                    ---------------------
+                   when WEST_GO =>
+                        if (s_cnt < c_DELAY_2SEC and (sensor_i = "00" or sensor_i = "01")) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= WEST_WAIT;
+                            s_cnt <= c_ZERO;
+                        end if;
+                        
+                   when WEST_WAIT =>
+                        if (s_cnt < c_DELAY_1SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= SOUTH_GO;
+                            s_cnt <= c_ZERO;
+                        end if; 
+                    
+                    
+                    
+                   when SOUTH_GO =>
+                        if (s_cnt < c_DELAY_2SEC and (sensor_i = "00" or sensor_i = "10")) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= SOUTH_WAIT;
+                            s_cnt <= c_ZERO; 
+                        end if;
+                        
+                   when SOUTH_WAIT =>
+                        if (s_cnt < c_DELAY_1SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= WEST_GO;
+                            s_cnt <= c_ZERO; 
+                        end if; 
+                    
+                    when others =>
+                        s_state <= WEST_GO;
+
+                end case;
+            end if; -- Synchronous reset
+        end if; -- Rising edge
+    end process p_smart_traffic_fsm;
 ```
+
+### Waveforms
+![waves](images/WG.PNG)
+![waves](images/WW.PNG) 
+![waves](images/SG.PNG) 
+![waves](images/SW.PNG)  
