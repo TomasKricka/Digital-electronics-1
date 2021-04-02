@@ -27,6 +27,12 @@
 <br>
 
 ## 2. Traffic light controller
+
+### State diagram
+![Traffic diagram](images/dia_traffic.png)
+
+<br>
+
 ### VHDL code `p_traffic_fsm`
 ```vhdl
  p_traffic_fsm : process(clk)
